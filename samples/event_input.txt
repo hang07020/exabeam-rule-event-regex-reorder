@@ -1,0 +1,22 @@
+SAMPLE-network-http-session-success-1-custom = {
+    input-message = [{
+        expression = """InList(type, 'SAMPLE-utm-kv-http-session-appctrl-custom')"""
+    }]
+    name = SAMPLE-network-http-session-success-1-custom
+    output-type = "http-session:success"
+    Platform = Network
+    Landscape = network
+    legacy-output-type = "web-activity-allowed"
+    legacy-source = "SAMPLE UTM"
+}}
+SAMPLE-utm-app-activity-success-custom = {
+    input-message = [{
+        expression = """InList(type, 'SAMPLE-utm-kv-http-session-appctrl-custom')"""
+    }]
+    name = SAMPLE-utm-app-activity-success-custom
+    output-type = "app-activity:success"
+    Platform = SAMPLE UTM
+    Landscape = firewall
+    legacy-output-type = "app-activity"
+    legacy-source = "SAMPLE UTM"
+}

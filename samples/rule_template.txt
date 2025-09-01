@@ -1,0 +1,22 @@
+Rules {
+  SAMPLE-GOU-A {
+    Score = "15.0"
+    PercentileThreshold = "0.5"
+    RuleLabels {
+      scenario = ["Evasion"]
+      mitre = ["T5556"]
+    }
+    RuleEventTypes = ["process-created",
+      "process-network"]
+  }
+  SAMPLE-File-Exec-Anomaly {
+    Score = "10.0"
+    PercentileThreshold = "0.1"
+    RuleLabels {
+      scenario = ["Evasion"]
+      mitre = ["T1036"]
+    }
+    RuleEventTypes = ["process-network",
+      "process-created"]
+  }
+}

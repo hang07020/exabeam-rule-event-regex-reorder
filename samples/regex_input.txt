@@ -1,0 +1,17 @@
+"""Parsers""" = [
+    {
+        """Name""" = """SAMPLE-PARSER"""
+        """ExtractionType""" = """regex"""
+        """Vendor""" = """SAMPLE"""
+        """Product""" = """SAMPLE PRODUCT"""
+        """ParserVersion""" = """1.0.0"""
+        """TimeFormat""" = [ """yyyy-MM-dd'T'HH:mm:ssZ""" ]
+        """Conditions""" = [ """SAMPLE_CONDITION1""", 
+        """SAMPLE_CONDITION2""" ]
+        """Fields""" = [ """^(111111!!!REGEX!!!555555)""", 
+        """^(222222!!!REGEX!!!444444)""", 
+        """^(333333!!!REGEX!!!333333)""", 
+        """^(444444!!!REGEX!!!222222)""", 
+        """^(555555!!!REGEX!!!111111)""" ]
+    }
+]
